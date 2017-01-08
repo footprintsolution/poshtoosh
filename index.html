@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>PoshTosh</title>
 		<!--css-->
+		<link rel="stylesheet" type="text/css" href="css/flatty.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css">
 		<style type="text/css">
 			
@@ -13,12 +14,17 @@
 				background-color:  #FCE4EC;
 			}
 			nav{
-				background-color:  #E91E63;
+				background: #E6EE9C; /* For browsers that do not support gradients */
+				background: -webkit-linear-gradient(left, #FFC3BE, #F48FB1,#F06292); /* For Safari 5.1 to 6.0 */
+				background: -o-linear-gradient(left, #FFC3BE, #F48FB1,#F06292); /* For Opera 11.1 to 12.0 */
+				background: -moz-linear-gradient(left, #FFC3BE, #F48FB1,#F06292); /* For Firefox 3.6 to 15 */
+				background: linear-gradient(left, #FFC3BE, #F48FB1,#F06292); /* Standard syntax */
 				color: #FCE4EC;
+				border-bottom: .25em solid #AD1457;
 			}
 			footer{
 				border: solid 2px white ;
-				background-color:  #E91E63 ;
+				background-color:  #F06292 ;
 				color: #FCE4EC;
 			}
 			.well{
@@ -32,113 +38,114 @@
 				background: -moz-linear-gradient(bottom, #F8BBD0, white); /* For Firefox 3.6 to 15 */
 				background: linear-gradient(bottom, #F8BBD0, white); /* Standard syntax */
 			}
+			.nav li a{
+				color: white;
+				font-weight: bold;
+				letter-spacing: .1em;
+			}
+			
+			.main-item-coursel{
+				border: solid .1em #FAFAFA ;
+				margin: .5em 0;
+			}
+			.main-item-coursel img{
+				margin: .25em;
+			}
+			
+			.middle-body{
+				background-color: white;
+				padding-top: 140px;
+				padding-bottom: 50px;
+			}
+			.comp-title{
+				padding : 0 2em;
+				text-shadow: 0 0 1em white;
+				color: white;
+				font-weight: bold;
+			}
 		</style>
 		<!-- js -->
 	</head>
 	
 	<body class="grad">
 		<nav class="nav nav-justified float-left" style="position: fixed;top: 0px; z-index: 100;">
-			<ul class="nav nav-pills ">
-				<li role="presentation" class="disabled"><a href="#">Disabled link</a></li>
+			<h2 class="comp-title"><span style="color: #FF80AB;">POSH</span><span style="color: #F1F8E9;">TOOSH </span></h2>
+			<ul class="nav nav-pills navbar-toggler-left" >
+				<li role="presentation" ><a href="#">Home</a></li>
+				<li role="presentation" ><a href="#">Products</a></li>
+				<li role="presentation" ><a href="#">About Us</a></li>
+				<li role="presentation" ><a href="#">Testimonail</a></li>
+				<li role="presentation" ><a href="#">Contact Us</a></li>
 				
 			</ul>
 		</nav>
-		<div class="container" style="background-color: white; padding-top: 20px; padding-bottom: 50px;">
-			<div class="row">
-				<div class="col-md-6">
-					<hr style="background-color: red;height: 2px; "  />
-				</div>
-				<div class="col-md-6">
-					<hr style="background-color: skyblue;height: 2px;" >
-				</div>
-			</div>
+		<div class="container middle-body">
+			<!-- <div class="row">
+					<div class="col-md-6">
+							<hr style="background-color: red;height: 2px; "  />
+					</div>
+					<div class="col-md-6">
+							<hr style="background-color: skyblue;height: 2px;" >
+					</div>
+			</div> -->
 			<div class="row">
 				<div class="col-md-2 text-center" >
-					<div style="background-color : #F8BBD0; height: 70%;position: fixed; z-index: 100;">
-					<h4>Menu</h4>
-					<hr />
-					<ul>
-						<li>Men</li>
-						<li>Women</li>
-					</ul>
+					<div style="background-color : #F8BBD0; height: 60%;position: fixed; z-index: 100;">
+						<h4>Menu</h4>
+						<hr />
+						<ul>
+							<li>Men</li>
+							<li>Women</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col-md-10">
 					<div class="row">
 						<div class="col-md-12">
-							<div class="well">
+						<hr style="background-color:skyblue;height: 1px; margin: .25em !important;"  />
+							<div align="text-center" style="font-weight: bold;padding: 0 40%;font-size: 1.5em;"> Shawl</div>
+							<hr style="background-color:red;height: 1px; margin: .25em !important;"  />
+							<div  class="main-item-coursel">
 								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="row">
+						<div class="col-md-12">
+							<hr style="background-color: skyblue;height: 1px; margin: .25em !important;"  />
+							<div align="text-center" style="font-weight: bold;padding: 0 40%;font-size: 1.5em;"> Mufflers</div>
+							<hr style="background-color: red;height: 1px; margin: .25em !important;"  />
+							<div  class="main-item-coursel">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								
 								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							<div class="well">
+							<hr style="background-color: skyblue;height: 1px; margin: .25em !important;"  />
+							<div align="text-center" style="font-weight: bold;"> Mufflers</div>
+							<div  class="main-item-coursel">
 								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="well">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="well">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="well">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="well">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="well">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="well">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="well">
-								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-								<div class="row">
-									<div class="col-xs-6 col-md-3">
-										<a href="#" class="thumbnail">
-											<img src="images.jpg" width="50px" height="50px" />
-										</a>
-									</div>
-								</div>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
+								<img src="images.jpg" width="150px" height="150px" class="img-thumbnail"/>
 								
 								<span class="glyphicon glyphicon-chevron-right"  aria-hidden="true"></span>
 							</div>
@@ -149,13 +156,11 @@
 			
 		</div>
 		
-		<footer class="container-fluid" style="position: fixed; width: 100%; bottom: 0px">
-			<div >
-				<div class="row">
-					<div class="col-md-12 animated fadeInLeft sections" >
-						<h4>FootPrint</h4>
-						<p style="font-size: 10px;" >We are the best in the quality. We work on the process of no cheat and fair price.</p>
-					</div>
+		<footer class="container-fluid" >
+			<div class="row">
+				<div class="col-md-12 animated fadeInLeft sections" >
+					<h4>FootPrint</h4>
+					<p style="font-size: 10px;" >We are the best in the quality. We work on the process of no cheat and fair price.</p>
 				</div>
 			</div>
 		</footer>
